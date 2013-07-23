@@ -24,7 +24,7 @@ position:absolute;
 	position:relative;
 	margin-left: auto;
 	margin-right: auto;
-	background-image:url(mp_mock3.jpg);
+	background-image:url(mp_mock2.jpg);
 	
 }
 .toprightcontainer
@@ -135,7 +135,7 @@ position:absolute;
 <script type="text/javascript">
 
 
-	var enddate='07/28/1013'; //Event Ending
+	var enddate='07/29/2013'; //Event Ending
 	
 	var countdownini=0;
 	//var d1 = new Date(); //client-side init
