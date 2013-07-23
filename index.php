@@ -24,7 +24,7 @@ position:absolute;
 	position:relative;
 	margin-left: auto;
 	margin-right: auto;
-	background-image:url(mp_mock2.jpg);
+	background-image:url(mp_mock3.jpg);
 	
 }
 .toprightcontainer
@@ -133,11 +133,14 @@ position:absolute;
 </div>
 
 <script type="text/javascript">
-	var enddate='07/28/2013'; //Event Ending
+
+
+	var enddate='07/28/1013'; //Event Ending
+	
 	var countdownini=0;
 	//var d1 = new Date(); //client-side init
 	//var n1 = d1.getTime();
-	var n1 = <?=strtotime("now")*1000?>; //server-side init
+	var n1 = <?php echo strtotime("now")*1000; ?>; //server-side init
 
 	
 	var d2 = new Date(enddate);
@@ -154,7 +157,9 @@ position:absolute;
 	//n2=n1+4000; //test 4 seconds
 	var countdowntext='Ends<br/>Soon!';
 	
-	if (countdownini<86400){
+	if (countdownini<1){
+		countdowntext='';
+	}else if (countdownini<86400){
 		countdowntext='Ends<br/>Today!';
 	}else if (countdownini<172800){
 		countdowntext='Ends<br/>Tomorrow!';
@@ -166,17 +171,13 @@ position:absolute;
 	$('div.uw_text').html(countdowntext);
 	
 	
-	alert(countdownini);
+	//alert(countdownini);
 	var clock = $('#uw_clock').FlipClock(countdownini, 
 	{
 		clockFace: 'DailyCounter',
 		countdown: true
-		//on event stop callback
 	});
 	
-	$('#uw_clock').FlipClock( 
-    {}); 
-
 
 </script>
 
