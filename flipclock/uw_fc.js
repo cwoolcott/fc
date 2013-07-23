@@ -1,42 +1,40 @@
-
-
-
-var countdownini=0;
+var countdown=0;
 //var d1 = new Date(); //client-side init
-//var n1 = d1.getTime();
+//var rightnow = d1.getTime();
+//var enddate='07/29/2013'; //Event Date
 
-
+if (rightnow==""){rightnow=0};
 
 var d2 = new Date(enddate);
-var n2 = d2.getTime(); 
+var eventtime = d2.getTime(); 
 
-if (n2<n1) {
-var countdownini=0;
+if (eventtime<rightnow) {
+var countdown=0;
 }
 else
 {
-var countdownini=(n2-n1)/1000;
+var countdown=(eventtime-rightnow)/1000;
 }
 
 //n2=n1+4000; //test 4 seconds
 var countdowntext='Ends<br/>Soon!';
 
-if (countdownini<1){
+if (countdown<1){
 	countdowntext='';
-}else if (countdownini<86400){
+}else if (countdown<86400){
 	countdowntext='Ends<br/>Today!';
-}else if (countdownini<172800){
+}else if (countdown<172800){
 	countdowntext='Ends<br/>Tomorrow!';
-}else if (countdownini<604800){
+}else if (countdown<604800){
 	countdowntext='Ends<br/>This Week!';
-}else if(countdownini<1209600){
+}else if(countdown<1209600){
 	countdowntext='Ends<br/>in Two Weeks!';}
 	
 $('div.uw_text').html(countdowntext);
 
 
-//alert(countdownini);
-var clock = $('#uw_clock').FlipClock(countdownini, 
+//alert(countdown);
+var clock = $('#uw_clock').FlipClock(countdown, 
 {
 	clockFace: 'DailyCounter',
 	countdown: true

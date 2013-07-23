@@ -22,7 +22,7 @@
 
 <script type="text/javascript">
 var enddate='07/29/2013'; //Event Ending
-var n1 = <?php echo strtotime("now")*1000; ?>; //server-side init
+var rightnow = <?php echo strtotime("now")*1000; ?>; //server-side init
 </script>
 
 <script src="flipclock/uw_fc.js"></script>
