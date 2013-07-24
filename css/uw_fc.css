@@ -1,0 +1,97 @@
+body {		
+position:absolute;	
+	background-color:#000;
+	text-align:center;
+	margin:0 auto;
+	top:0px;left:0px;right:0px;bottom:0px;
+}
+
+#counter {
+	position:relative;
+	margin:5px;
+	z-index:4000;
+}
+
+.digit-separator {position: relative; float: left; width: 17px; height: 44px; overflow: hidden; background-image: url(../images/digit_separator.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.digit {
+	background-image:url(../images/digits.png)
+}
+
+#shading {
+	background-image: url(../images/sprites.png);
+	background-position: 0px -396px;
+	background-repeat: repeat-x;
+	float: left;
+	height: 44px;
+	position: absolute;
+	width: 291px;	
+	z-index:4100;
+	top:0;
+	left:0;
+
+}
+
+#container {
+	display:block;
+	width:1000px;
+	height:736px;
+	
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	background-image:url(../mp_mock2.jpg);
+	
+}
+.toprightcontainer
+{
+	border: 0px solid black;
+	float:right;
+	margin: 5px 15px 0 0;
+	height:90px;
+	width:635px;
+
+	
+
+}
+.uw_text{
+	vertical-align:top;
+	display:inline-block;
+	width:295px;
+	height:68px;
+	padding-right:20px;
+
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:34px;
+	font-weight:bold;
+	letter-spacing:-.8px;
+	line-height:32px;
+	text-align:right;
+	vertical-align:bottom;
+
+
+}
+.uw_clock_border{
+	vertical-align:top;
+	display:inline-block;
+	background-color:#CCC;
+	width:302px;
+	height:60px;
+
+	border-radius: 4px;
+	margin: 20px 0 0 0;
+	padding:5px;
+	
+}
+#numbers
+{
+	background-image:url(../images/numbers.png);
+	background-position:center;
+	background-repeat:no-repeat; 
+	width:300px;
+	height:12px;
+	margin-top:-5px;
+}
